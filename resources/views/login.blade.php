@@ -15,7 +15,7 @@
     @if(Session::has('fail'))
     <h3 style="color:#ff0000">{{Session::get('fail')}}</h3>
     @endif
-    <h1>Business Details login Form</h1>
+    <h1>login</h1>
     <hr>
     <form action="{{url('login_user')}}" method="POST">
         @csrf

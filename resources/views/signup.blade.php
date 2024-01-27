@@ -19,7 +19,7 @@
     <h3 style="color:#ff0000">{{Session::get('fail')}}</h3>
     @endif
     <!-- main form -->
-    <h1>Business Details Signup Form</h1><hr>
+    <h1>Signup</h1><hr>
     <form action="{{url('user_signup')}}" method="POST">
         @csrf
 
