@@ -34,4 +34,7 @@ Route::post('login_user',[loginController::class,'LoginUser']);
 // dashboared
 Route::get('dashboard',[dashboardController::class,'Index']);
 
+// logout
+Route::get('logout_user',[dashboardController::class,'Logout']);
+
 Route::post('/create_business', [BusinessController::class, 'store'])->name('business.store');

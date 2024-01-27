@@ -11,6 +11,10 @@
     @if(Session::has('success'))
         <h3 style="color:#00ff00">{{ Session::get('success') }}</h3>
     @endif
+
+    @if(Session::has('fail'))
+        <h3 style="color:#ff0000">{{ Session::get('fail') }}</h3>
+    @endif
     <br>
     <style>
         /* Style for the modal */
@@ -36,6 +40,7 @@
 
         <!-- Trigger the modal with a button -->
         <button onclick="openModal()"> Create Business Details</button>
+        <a href="{{url('logout_user')}}">Logout</a>
 
         <!-- The overlay background -->
         <div id="overlay" class="overlay" onclick="closeModal()"></div>

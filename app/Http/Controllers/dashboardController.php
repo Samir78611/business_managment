@@ -16,4 +16,12 @@ class dashboardController extends Controller
             return view('dashboard',compact('businesses'));
         }
     }
+    public function Logout(){
+        if(Auth::check()){
+            $user=Auth::logout();
+            return redirect(url('login'))->with('success','Logout Successfully');
+        }else{
+            return redirect(url('dashboard'))->with('fail','Logout Failed');
+        }
+    }
 }

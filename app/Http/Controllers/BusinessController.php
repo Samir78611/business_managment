@@ -32,6 +32,6 @@ class BusinessController extends Controller
             'phone_number' => $request->input('phone_number'),
         ]);
 
-        return redirect('dashboard')->with('success','Business created successfully!');
+        return redirect('dashboard')->with('success','Business created successfully');
     }
 }
