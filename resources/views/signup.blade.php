@@ -29,7 +29,7 @@
         <input type="email" id="email" name="email" required>
         <br>
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" pattern="\d{5}" title="Please enter exactly 5 numbers" required>
+        <input type="password" id="password" name="password" required>
         <br> 
         <input type="reset" value="Reset">
         <input type="submit" value="Signup">
