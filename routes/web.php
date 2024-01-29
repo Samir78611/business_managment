@@ -17,7 +17,7 @@ use App\Http\Controllers\BusinessController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
 });
 
 // Business Signup
